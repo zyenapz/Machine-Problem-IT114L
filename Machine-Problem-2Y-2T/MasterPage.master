@@ -4,17 +4,43 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>DataWiz</title>
+
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+    <div class="container">
+        <div>
+            <asp:ContentPlaceHolder id="cphLogo" runat="server">
+                <h1>DataWiz</h1>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder id="cphNavbar" runat="server">
+                <h1>Navbar</h1>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div>
+            <asp:ContentPlaceHolder id="cphBody" runat="server">
             
-        </asp:ContentPlaceHolder>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="footer">
+            <asp:ContentPlaceHolder id="cphFooter" runat="server">
+                <h3>2021 Data Wiz. Web Wizards, Inc. All Rights Reserved.</h3>
+            </asp:ContentPlaceHolder>
+        </div>
     </div>
+
+
     </form>
 </body>
 </html>

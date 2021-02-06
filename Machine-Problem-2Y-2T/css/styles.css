@@ -1,0 +1,7 @@
+﻿div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    width: 65%;
+    margin: auto;
+}
