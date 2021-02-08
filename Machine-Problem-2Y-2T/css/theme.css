@@ -1,0 +1,53 @@
+﻿@font-face {
+    font-family: Raleway;
+    src: url(Fonts/Raleway-VariableFont_wght.ttf);
+}
+
+div.header {
+
+}
+
+div.navbar {
+    height: 5em;
+}
+
+div.footer {
+    text-align: center;
+}
+
+.header3 {
+    font-size: 3em;
+    font-family: Raleway;
+    padding: 0.2em;
+    font-weight: 600;
+}
+
+.paragraph {
+    font-size: 1.2em;
+    font-family: Raleway;
+}
+
+.logo-text {
+    font-family: Raleway;
+    font-size: 6em;
+    font-weight: bolder;
+    color: #191919;
+}
+
+.nav-link {
+    padding: 0.5em;
+    font-family: Raleway;
+    font-size: 2em;
+    font-weight: bolder;
+    color: #191919;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background: orange;
+    color: white;
+}
+
+.nav-link {
+    width: 100px;
+}
