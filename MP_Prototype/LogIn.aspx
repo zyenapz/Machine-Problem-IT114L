@@ -12,6 +12,13 @@
         .auto-style2 {
             width: 255px;
         }
+        .auto-style3 {
+            width: 255px;
+            height: 26px;
+        }
+        .auto-style4 {
+            height: 26px;
+        }
     </style>
 </head>
 <body>
@@ -21,8 +28,8 @@
         <div>
             <table class="auto-style1">
                 <tr>
-                    <td class="auto-style2">User ID / Contact Number:</td>
-                    <td>
+                    <td class="auto-style3">User ID / Contact Number:</td>
+                    <td class="auto-style4">
                         <asp:TextBox ID="txtIdNum" runat="server"></asp:TextBox>
                     </td>
                 </tr>

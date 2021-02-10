@@ -59,9 +59,11 @@ namespace MP_Prototype
             OleDbDataReader reader = cmd.ExecuteReader();
             reader.Read();
 
+            //Save file to Images folder (need full path)
             if (ImgUpload.HasFile)
             {
-                ImgUpload.SaveAs(Server.MapPath("images//" + ImgUpload.FileName)); //Save file to Images folder (need full path)
+                imgFile = ImgUpload.FileName;
+                ImgUpload.SaveAs(Server.MapPath("~/Content/Images/" + ImgUpload.FileName)); 
             }
             else
                 imgFile = reader[8].ToString();

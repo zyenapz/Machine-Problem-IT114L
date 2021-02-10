@@ -1,8 +1,31 @@
+February 10 2020
+Debugger: Francis Tayag
+
+Unresolved issues
+=================
 Bug in EditInfo.aspx
 	Exception: System.Data.OleDb.OleDbException
 		: 'The field is too small to accept the amount of data you attempted to add.'
-	Remedy:
-		Add validation and max length for the textbox controls.
+	Remedy: Add validation to check for max length for the textbox controls.
 
-Edit in EditInfo.aspx
+Changes		
+=======
+Miscellaneous changes
+	- Moved 'Images' folder inside 'Content' folder for organization purposes.
+	- Moved Prototype folder to root folder of repository.
+	- Moved old MP folder to 'Old' folder.
+
+EditInfo.aspx
 	- Edited ImgUpload process to use relative path instead.
+	- Modified path of the image to look for images in Content/Images instead
+
+MyAccount.aspx
+	- Modified path of the image to search for Content/Images instead
+
+AboutUs.aspx
+	- Added generic text content.
+
+Master.master
+	- Added DataWiz header
+	- Added footer
+	- Added a container div and modified its width to 70% (for aesthetics)

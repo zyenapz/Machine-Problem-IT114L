@@ -44,7 +44,7 @@ namespace MP_Prototype
             OleDbCommand cmd = new OleDbCommand("select * from tbl_Trader where Trader_ID = "+CurrentID.current,conn);
             OleDbDataReader reader = cmd.ExecuteReader();
             reader.Read();
-            imgProfile.ImageUrl = "Images/"+reader[8].ToString();
+            imgProfile.ImageUrl = "Content/Images/"+reader[8].ToString();
             lblID.Text = CurrentID.current.ToString();
             lblName.Text = reader[2].ToString() + " " + reader[1].ToString();
             lblEmail.Text = reader[6].ToString();
