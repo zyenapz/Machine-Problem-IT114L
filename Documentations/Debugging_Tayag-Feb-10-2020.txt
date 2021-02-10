@@ -1,0 +1,8 @@
+Bug in EditInfo.aspx
+	Exception: System.Data.OleDb.OleDbException
+		: 'The field is too small to accept the amount of data you attempted to add.'
+	Remedy:
+		Add validation and max length for the textbox controls.
+
+Edit in EditInfo.aspx
+	- Edited ImgUpload process to use relative path instead.
