@@ -62,7 +62,7 @@
 
             <div class="footer">
                 <hr />
-                <asp:Label ID="Label2" runat="server" Text="© 2021 DataWiz, All Rights Reserved. DataWiz is the property of WebWizards, Incorporated." Font-Size="Medium"></asp:Label>
+                <asp:Label ID="Label2" runat="server" Text="© 2021 DataWiz, All Rights Reserved. DataWiz is the property of WebWizards, Incorporated." Font-Size="Small"></asp:Label>
             </div>
         </div>
         

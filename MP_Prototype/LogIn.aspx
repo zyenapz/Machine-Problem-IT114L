@@ -52,7 +52,7 @@
         <div>
 
             Don&#39;t have an account yet? <br />
-            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignIn.aspx">Sign Up Here!</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/SignUp.aspx">Sign Up Here!</asp:HyperLink>
 
         </div>
     </form>

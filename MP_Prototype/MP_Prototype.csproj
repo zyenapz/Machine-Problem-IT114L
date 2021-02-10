@@ -69,7 +69,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LogIn.aspx" />
-    <Content Include="SignIn.aspx" />
+    <Content Include="SignUp.aspx" />
     <Content Include="Web.config" />
     <Content Include="Home.aspx" />
     <Content Include="Products.aspx" />
@@ -103,12 +103,12 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SignIn.aspx.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
+    <Compile Include="SignUp.aspx.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SignIn.aspx.designer.cs">
-      <DependentUpon>SignIn.aspx</DependentUpon>
+    <Compile Include="SignUp.aspx.designer.cs">
+      <DependentUpon>SignUp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Products.aspx.cs">
       <DependentUpon>Products.aspx</DependentUpon>
