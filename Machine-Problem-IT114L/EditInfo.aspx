@@ -23,27 +23,27 @@
             <tr>
                 <td class="auto-style4">
                     First name:&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtFirst" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtFirst" runat="server" MaxLength="30"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvfirstname" runat="server" ControlToValidate="txtFirst" ErrorMessage="Enter a first name!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style5">
                     Last Name:&nbsp;&nbsp;
-                    <asp:TextBox ID="txtLast" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLast" runat="server" MaxLength="30"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvlastname" runat="server" ControlToValidate="txtLast" ErrorMessage="Enter a last name!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style6">Address:&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtAdd" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtAdd" runat="server" MaxLength="100"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvaddress" runat="server" ControlToValidate="txtAdd" ErrorMessage="Enter an address!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style7">
                     Contact Number:&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtNum" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtNum" runat="server" MaxLength="11"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvaddress0" runat="server" ControlToValidate="txtAdd" ErrorMessage="Enter a phone number!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
 &nbsp;
                     <asp:CompareValidator ID="cvphonenumber" runat="server" ControlToValidate="txtNum" ErrorMessage="Letters not allowed!" Font-Italic="True" ForeColor="Red" Operator="DataTypeCheck" Type="Integer"></asp:CompareValidator>
@@ -52,7 +52,7 @@
             <tr>
                 <td>
                     Email Address:&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtEmail" runat="server" MaxLength="50"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvemail" runat="server" ControlToValidate="txtEmail" ErrorMessage="Enter an email!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
@@ -61,19 +61,19 @@
             </tr>
             <tr>
                 <td>Current Password:&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtCurrPass" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtCurrPass" runat="server" TextMode="Password" MaxLength="16"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvcurrpas" runat="server" ControlToValidate="txtCurrPass" ErrorMessage="Enter your current password!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td>New Password:&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtNewPass" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtNewPass" runat="server" TextMode="Password" MaxLength="16"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvnewpass" runat="server" ControlToValidate="txtNewPass" ErrorMessage="Enter your new password!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td>Confirm New Password:&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="txtConfirmNew" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:TextBox ID="txtConfirmNew" runat="server" TextMode="Password" MaxLength="16"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvconfirm" runat="server" ControlToValidate="txtConfirmNew" ErrorMessage="Confirm your new password!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
