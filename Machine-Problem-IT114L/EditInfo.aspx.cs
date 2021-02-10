@@ -22,7 +22,7 @@ namespace MP_Prototype
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            ValidationSettings.UnobtrusiveValidationMode = UnobtrusiveValidationMode.None;
         }
 
         protected void btnSave_Click(object sender, EventArgs e)
