@@ -26,6 +26,13 @@
             height: 34px;
             width: 252px;
         }
+        .auto-style7 {
+            width: 252px;
+            height: 30px;
+        }
+        .auto-style8 {
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -57,8 +64,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style4">Contact Number:</td>
-                    <td>
+                    <td class="auto-style7">Contact Number:</td>
+                    <td class="auto-style8">
                         <asp:TextBox ID="txtNum" runat="server"></asp:TextBox>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtNum" ErrorMessage="*" ForeColor="Red"></asp:RequiredFieldValidator>
                         <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="txtNum" ErrorMessage="Invalid" ForeColor="Red" ValidationExpression="^(09|\+639)\d{9}$"></asp:RegularExpressionValidator>
