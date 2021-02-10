@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP_Prototype", "MP_Prototype.csproj", "{A3B650DB-4FBF-4FC6-BE1F-D44881D00588}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Machine-Problem-IT114L", "Machine-Problem-IT114L.csproj", "{A3B650DB-4FBF-4FC6-BE1F-D44881D00588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
