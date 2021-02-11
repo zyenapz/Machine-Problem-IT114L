@@ -42,6 +42,15 @@ namespace MP_Prototype
         protected global::System.Web.UI.WebControls.TextBox txtFirst;
 
         /// <summary>
+        /// rfvfirstname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvfirstname;
+
+        /// <summary>
         /// txtLast control.
         /// </summary>
         /// <remarks>
@@ -49,6 +58,15 @@ namespace MP_Prototype
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtLast;
+
+        /// <summary>
+        /// rfvlastname control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvlastname;
 
         /// <summary>
         /// txtAdd control.
@@ -60,6 +78,15 @@ namespace MP_Prototype
         protected global::System.Web.UI.WebControls.TextBox txtAdd;
 
         /// <summary>
+        /// rfvaddress control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvaddress;
+
+        /// <summary>
         /// txtNum control.
         /// </summary>
         /// <remarks>
@@ -67,6 +94,24 @@ namespace MP_Prototype
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNum;
+
+        /// <summary>
+        /// rfvaddress0 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvaddress0;
+
+        /// <summary>
+        /// cvphonenumber control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator cvphonenumber;
 
         /// <summary>
         /// txtEmail control.
@@ -78,6 +123,15 @@ namespace MP_Prototype
         protected global::System.Web.UI.WebControls.TextBox txtEmail;
 
         /// <summary>
+        /// rfvemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvemail;
+
+        /// <summary>
         /// txtCurrPass control.
         /// </summary>
         /// <remarks>
@@ -85,6 +139,15 @@ namespace MP_Prototype
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtCurrPass;
+
+        /// <summary>
+        /// rfvcurrpas control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvcurrpas;
 
         /// <summary>
         /// txtNewPass control.
@@ -96,6 +159,15 @@ namespace MP_Prototype
         protected global::System.Web.UI.WebControls.TextBox txtNewPass;
 
         /// <summary>
+        /// rfvnewpass control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvnewpass;
+
+        /// <summary>
         /// txtConfirmNew control.
         /// </summary>
         /// <remarks>
@@ -103,6 +175,15 @@ namespace MP_Prototype
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtConfirmNew;
+
+        /// <summary>
+        /// rfvconfirm control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvconfirm;
 
         /// <summary>
         /// btnSave control.
