@@ -1,9 +1,9 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="MP_Prototype.WebForm2" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="Products.aspx.cs" Inherits="MP_Prototype.WebForm2" StylesheetTheme="Red" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div>
-        Products
+    <div class="title">
+        <h1>Browse Products</h1>
     </div>
     <div>
 
@@ -36,9 +36,8 @@
         <br />
         Enter Product ID:
         <asp:TextBox ID="txtAddID" runat="server" Width="136px"></asp:TextBox>
-        <br />
-        <asp:Button ID="btnAdd" runat="server" Height="41px" OnClick="btnAdd_Click" Text="Add to Cart" Width="98px" />
-&nbsp;
-        <asp:Button ID="btnCancel" runat="server" Height="41px" OnClick="btnCancel_Click" Text="Cancel" Width="98px" />
+        <br /><br />
+        <asp:Button ID="btnAdd" runat="server" Height="41px" OnClick="btnAdd_Click" Text="Add to Cart" Width="98px" Font-Size="" />
+        <asp:Button ID="btnCancel" runat="server" Height="41px" OnClick="btnCancel_Click" Text="Cancel" Width="98px" Font-Size="" />
     </div>
 </asp:Content>

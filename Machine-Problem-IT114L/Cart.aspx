@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="MP_Prototype.WebForm4" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="Cart.aspx.cs" Inherits="MP_Prototype.WebForm4" StylesheetTheme="Red" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style2 {
@@ -7,8 +7,8 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="auto-style2">
-        MY CART
+    <div class="title">
+        <h1>My Cart</h1>
     </div>
     <div>
 
@@ -38,9 +38,9 @@
         </asp:DropDownList>
         <br />
         <br />
-        <asp:Button ID="btnReq" runat="server" Height="33px" OnClick="btnReq_Click" Text="Send Request" Width="95px" />
+        <asp:Button ID="btnReq" runat="server" Height="33px" OnClick="btnReq_Click" Text="Send Request" Width="115px" />
 &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="btnCancel" runat="server" Height="33px" OnClick="btnCancel_Click" Text="Cancel" Width="95px" />
+        <asp:Button ID="btnCancel" runat="server" Height="33px" OnClick="btnCancel_Click" Text="Cancel" Width="115px" />
 
     </div>
 </asp:Content>
