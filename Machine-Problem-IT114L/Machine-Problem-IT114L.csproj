@@ -169,6 +169,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="MP.Master" />
+    <Content Include="App_Themes\Red\Red.skin" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

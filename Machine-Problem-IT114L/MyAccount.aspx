@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="MyAccount.aspx.cs" Inherits="MP_Prototype.WebForm3" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="MyAccount.aspx.cs" Inherits="MP_Prototype.WebForm3" StylesheetTheme="Red" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
     .auto-style2 {
@@ -30,7 +30,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div>
-
+        <div class="title">
+            <h1>My Account</h1>
+        </div>
         <table class="auto-style3">
             <tr>
                 <td class="auto-style2">

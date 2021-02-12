@@ -4,90 +4,45 @@
 
 <html>
 <head runat="server">
+    <link href="~/Content/Styles/Master.css" rel="Stylesheet" type="text/css" />
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
+
     </asp:ContentPlaceHolder>
-    <style type="text/css">
-        @font-face {
-            font-family: Raleway;
-            src: url("~/Content/Fonts/Raleway-VariableFont_wght.ttf");
-        }
-        .auto-style1 {
-            width: 100%;
-        }
-        .container {
-            width: 65%;
-            display: flex;
-            flex-direction: column;
-            margin: auto;
-            font-family: Raleway;
-            color: #242124;
-        }
-        .footer {
-            text-align: center;
-        }
-        hr {
-            border: 1px solid crimson;
-        }
-        div {
-            font-size: 1.05em;
-        }
-        .logo {
-            text-align: center;
-        }
-        .navbar {
-            background-color: crimson;
-        }
-        .navbar table {
-            border-collapse: collapse;
-            border-spacing: 0px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.3em;
-        }
-        .navbar a:hover {
-            background-color: white;
-            color: crimson;
-        }
-    </style>
-    <link href="~/Content/Styles/styles.css" rel="Stylesheet" type="text/css" />
+    
 </head>
 <body>
     <form id="form1" runat="server">
         <div class="container">
-            <div>
-                <div class="logo">
-                    <asp:Label ID="Label1" runat="server" Text="DataWiz" Font-Size="48px"></asp:Label>
-                </div>
-                
+            <div class="logo">
+                <asp:Label ID="Label1" runat="server" Text="DataWiz" Font-Size="48px"></asp:Label>
+            </div>
+            <asp:ContentPlaceHolder ID="cphNavbar" runat="server">
                 <div class="navbar">
                     <table class="auto-style1" style="text-align: center">
-                    <tr>
-                        <td>
-                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
-                        </td>
-                        <td>
-                            <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Products.aspx">Products</asp:HyperLink>
-                        </td>
-                        <td>
-                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/MyAccount.aspx">My Account</asp:HyperLink>
-                        </td>
-                        <td>
-                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Cart.aspx">Cart</asp:HyperLink>
-                        </td>
-                        <td>
-                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
-                        </td>
-                        <td>
-                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
-                        </td>
-                    </tr>
-                </table>
+                        <tr>
+                            <td>
+                                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Products.aspx">Products</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/MyAccount.aspx">My Account</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Cart.aspx">Cart</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/AboutUs.aspx">About Us</asp:HyperLink>
+                            </td>
+                            <td>
+                                <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-                
-            </div>
+            </asp:ContentPlaceHolder>
 
             <div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
