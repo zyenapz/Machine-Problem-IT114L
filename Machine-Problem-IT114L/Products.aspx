@@ -5,7 +5,7 @@
     <div class="title">
         <h1>Browse Products</h1>
     </div>
-    <div>
+    <div style="padding: 10px 0px 10px 0px">
 
         Filter:
 
@@ -22,7 +22,7 @@
     </div>
     <div>
 
-        <asp:GridView ID="dgvProducts" runat="server">
+        <asp:GridView ID="dgvProducts" runat="server" CellPadding="3" Width="1000px">
             <Columns>
                 <asp:BoundField DataField="Product_ID" HeaderText="Product ID" SortExpression="Product_ID" />
                 <asp:BoundField DataField="Product_Name" HeaderText="Product Name" SortExpression="Product_Name" />
