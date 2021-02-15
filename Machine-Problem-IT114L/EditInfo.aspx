@@ -8,6 +8,13 @@
         .auto-style4 {
             height: 23px;
         }
+        .auto-style5 {
+            height: 23px;
+            font-size: large;
+        }
+        .auto-style6 {
+            height: 30px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -41,7 +48,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style7">
+                <td class="auto-style6">
                     Contact Number:&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="txtNum" runat="server" MaxLength="11"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvaddress0" runat="server" ControlToValidate="txtAdd" ErrorMessage="Enter a phone number!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
@@ -57,7 +64,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style4">Password:</td>
+                <td class="auto-style5">Password:</td>
             </tr>
             <tr>
                 <td>Current Password:&nbsp;&nbsp;&nbsp;
@@ -75,6 +82,9 @@
                 <td>Confirm New Password:&nbsp;&nbsp;&nbsp;
                     <asp:TextBox ID="txtConfirmNew" runat="server" TextMode="Password" MaxLength="16"></asp:TextBox>
                     <asp:RequiredFieldValidator ID="rfvconfirm" runat="server" ControlToValidate="txtConfirmNew" ErrorMessage="Confirm your new password!" Font-Bold="False" Font-Italic="True" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <em>
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtNewPass" ControlToValidate="txtConfirmNew" ErrorMessage="Password does not match!" ForeColor="Red"></asp:CompareValidator>
+                    </em>
                 </td>
             </tr>
             <tr>
