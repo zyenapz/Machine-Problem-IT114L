@@ -1,10 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="MP_Prototype.SignIn" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MP.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="MP_Prototype.SignIn" StylesheetTheme="Red" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
         .auto-style1 {
             width: 100%;
@@ -16,30 +12,33 @@
             height: 34px;
         }
         .auto-style4 {
-            width: 252px;
+            width: 268px;
         }
         .auto-style5 {
             height: 23px;
-            width: 252px;
+            width: 268px;
         }
         .auto-style6 {
             height: 34px;
-            width: 252px;
+            width: 268px;
         }
         .auto-style7 {
-            width: 252px;
+            width: 268px;
             height: 30px;
         }
         .auto-style8 {
             height: 30px;
         }
     </style>
-</head>
-<body>
-    <form id="form1" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphNavbar" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <div>
 
-            SIGN UP</div>
+            <h1>SIGN UP</h1>
+        </div>
         <div>
             <table class="auto-style1">
                 <tr>
@@ -95,15 +94,13 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style6">
-                        <asp:Button ID="btnSignUp" runat="server" OnClick="btnSignUp_Click" Text="Sign Up" />
+                    <td class="auto-style6" style="padding-top: 10px">
+                        <asp:Button ID="btnSignUp" runat="server" OnClick="btnSignUp_Click" Text="Sign Up" Height="41px" Width="116px" Font-Size="Large" CssClass="button-var1" />
 &nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
+                        <asp:Button ID="btnCancel" runat="server" Text="Cancel" OnClick="btnCancel_Click" Height="41px" Width="116px" Font-Size="Large" />
                     </td>
                     <td class="auto-style3"></td>
                 </tr>
             </table>
         </div>
-    </form>
-</body>
-</html>
+</asp:Content>

@@ -12,7 +12,7 @@
     </div>
     <div>
 
-        <asp:GridView ID="dgvCart" runat="server">
+        <asp:GridView ID="dgvCart" runat="server" CellPadding="3" Width="900px">
             <Columns>
                 <asp:BoundField DataField="Product_ID" HeaderText="Product ID" SortExpression="Product_ID" />
                 <asp:BoundField DataField="Product_Name" HeaderText="Product Name" SortExpression="Product_Name" />
