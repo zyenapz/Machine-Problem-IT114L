@@ -8,12 +8,6 @@ using System.Windows.Forms; //Need for message box
 using System.Data.OleDb;
 using System.Data;
 
-/*
-Dev Notes:
-    -Di pa Functional yung Confirm Password xd
-    -Baka need i-encrypt yung pass(?)
-*/
-
 namespace MP_Prototype
 {
     public partial class SignIn : System.Web.UI.Page
