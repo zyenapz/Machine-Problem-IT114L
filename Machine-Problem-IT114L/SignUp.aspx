@@ -29,6 +29,9 @@
         .auto-style8 {
             height: 30px;
         }
+        hr {
+            border: 0;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cphNavbar" runat="server">
