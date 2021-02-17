@@ -18,8 +18,6 @@ Dev Notes:
      Kung sino unang makaaccept siya lang makakatrade niya
      Madedelete yung ibang request since nakuha na yung item to guve ni userA
      (Parang first come first served)
-
-    -Wala pang way para malaman ng users status ng requests nila
 */
 
 namespace MP_Prototype
@@ -31,6 +29,7 @@ namespace MP_Prototype
             ShowProducts();
             ShowInfo();
             ShowReq();
+            ShowNotif();
         }
 
         public void ShowInfo()
@@ -101,6 +100,29 @@ namespace MP_Prototype
             conn.Close();
         }
 
+        public void ShowNotif()
+        {
+            string connstr = "Provider=Microsoft.Jet.OleDB.4.0; Data Source=";
+            connstr += Server.MapPath("~/App_Data/db_TradeLedger.Mdb");
+            OleDbConnection conn = new OleDbConnection(connstr);
+
+            conn.Open();
+
+            OleDbCommand cmd = new OleDbCommand("select Req_Name, Prod_Take, Prod_Give, Status from tbl_Notification where Trader_ID = "+CurrentID.current, conn);
+            OleDbDataReader reader = cmd.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                OleDbDataAdapter adapter = new OleDbDataAdapter(cmd.CommandText,conn);
+                DataTable dtbl = new DataTable();
+                adapter.Fill(dtbl);
+
+                dgvNotif.AutoGenerateColumns = false;
+                dgvNotif.DataSource = dtbl;
+                dgvNotif.DataBind();
+            }
+        }
+
         protected void btnEdit_Click(object sender, EventArgs e)
         {
             Response.Redirect("EditInfo.aspx");
@@ -142,7 +164,12 @@ namespace MP_Prototype
 
                 cmd = new OleDbCommand("insert into tbl_History(Requester_ID,Receiver_ID,Product_Take,Product_Give,Shipping,Status,Take_ID,Give_ID) values(" +
                     reader[4]+","+reader[1]+",'"+reader[2].ToString()+"','"+reader[5].ToString()+"','"+reader[7].ToString()+"','1',"+reader[8]+","+reader[9]+");", conn);
-                cmd.ExecuteNonQuery(); 
+                cmd.ExecuteNonQuery();
+
+                //Insert to notification table as accepted
+                cmd = new OleDbCommand("insert into tbl_Notification values("+reader[4]+",'"+lblName.Text+"','"+reader[2].ToString()+"','"+
+                    reader[5].ToString()+"','Accepted');", conn);
+                cmd.ExecuteNonQuery();
 
                 //Delete items involved in transaction from Product table
                 cmd = new OleDbCommand("delete from tbl_Product where Product_ID = "+reader[8]+";", conn);
@@ -209,6 +236,11 @@ namespace MP_Prototype
             {
                 cmd = new OleDbCommand("insert into tbl_History(Requester_ID,Receiver_ID,Product_Take,Product_Give,Shipping,Status,Take_ID,Give_ID) values(" +
                        reader[4] + "," + reader[1] + ",'" + reader[2].ToString() + "','" + reader[5].ToString() + "','" + reader[7].ToString() + "','2'," + reader[8] + "," + reader[9] + ");", conn);
+                cmd.ExecuteNonQuery();
+
+                //Insert to notification table as declined
+                cmd = new OleDbCommand("insert into tbl_Notification values(" + reader[4] + ",'" + lblName.Text + "','" + reader[2].ToString() + "','" +
+                    reader[5].ToString() + "','Declined');", conn);
                 cmd.ExecuteNonQuery();
 
                 cmd = new OleDbCommand("delete from tbl_Request where Request_ID = " + int.Parse(txtReqID.Text) + ";", conn);

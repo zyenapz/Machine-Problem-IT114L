@@ -38,7 +38,7 @@
                     <asp:ListItem>System Unit</asp:ListItem>
                     <asp:ListItem>Processor</asp:ListItem>
                 </asp:DropDownList>
-                (For sample purposes)</td>
+                </td>
         </tr>
         <tr>
             <td>

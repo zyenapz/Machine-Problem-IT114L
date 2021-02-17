@@ -123,6 +123,16 @@
 &nbsp;&nbsp;
         <asp:Button ID="btnDecline" runat="server" Height="39px" Text="Decline" Width="108px" OnClick="btnDecline_Click" />
         &nbsp;<br />
+        <br />
+        Notifications:<asp:GridView ID="dgvNotif" runat="server" CellPadding="3" Width="800px">
+            <Columns>
+                <asp:BoundField DataField="Req_Name" HeaderText="Receiver Name" SortExpression="Req_Name" />
+                <asp:BoundField DataField="Prod_Take" HeaderText="Product Requested" SortExpression="Prod_Take" />
+                <asp:BoundField DataField="Prod_Give" HeaderText="Product to Give" SortExpression="Prod_Give" />
+                <asp:BoundField DataField="Status" HeaderText="Status" SortExpression="Status" />
+            </Columns>
+        </asp:GridView>
+        <br />
 
     </div>
 </asp:Content>

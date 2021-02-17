@@ -7,18 +7,6 @@ using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using System.Data.OleDb;
 
-/*
-Dev Notes:
-    -Always start on this page (if required to have an acc first)
-
-    -Bulok pa mga validations tsaka overall structure xd
-
-    -This prototype is not the final mp 
-     Made to have an idea to how the system will work
-     Feel free to apply major/minor changes to code and database file
-     Codes inside this project are made to be applied to front end designs created by other members xd(if applicable)
-*/
-
 namespace MP_Prototype
 {
     //**Global variable to hold ID of current user**//

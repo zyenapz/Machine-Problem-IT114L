@@ -8,11 +8,6 @@ using System.Windows.Forms;
 using System.Data.OleDb;
 using System.Data;
 
-/*
-Dev Notes:
-    -Di agad nawawala sa data grid view yung nadelete na row after sending request (pero deleted na yung row sa database)
-     kailangan pa marefresh nung page bago mawala sa grid view yung row
-*/
 namespace MP_Prototype
 {
     public partial class WebForm4 : System.Web.UI.Page
