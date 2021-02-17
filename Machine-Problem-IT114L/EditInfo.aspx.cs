@@ -111,5 +111,10 @@ namespace MP_Prototype
             conn.Close();
             return valid;
         }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MyAccount.aspx");
+        }
     }
 }

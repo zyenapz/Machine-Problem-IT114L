@@ -80,5 +80,10 @@ namespace MP_Prototype
             txtPass.Text = "";
             txtPassConfirm.Text = "";
         }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Login.aspx");
+        }
     }
 }
