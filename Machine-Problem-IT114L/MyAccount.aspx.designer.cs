@@ -123,6 +123,15 @@ namespace MP_Prototype
         protected global::System.Web.UI.WebControls.TextBox txtReqID;
 
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
         /// btnAccept control.
         /// </summary>
         /// <remarks>
@@ -139,5 +148,14 @@ namespace MP_Prototype
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnDecline;
+
+        /// <summary>
+        /// dgvNotif control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView dgvNotif;
     }
 }

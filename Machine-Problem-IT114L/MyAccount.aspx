@@ -115,16 +115,19 @@
             <tr>
                 <td>Request ID:</td>
                 <td>
-                    <asp:TextBox ID="txtReqID" runat="server" Width="179px"></asp:TextBox>
+                    <%-- Group Transaction --%>
+                    <asp:TextBox ID="txtReqID" runat="server" Width="179px" TextMode="Number"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" ControlToValidate="txtReqID" runat="server" ErrorMessage="*" ForeColor="Red" ValidationGroup="Transaction" Font-Size="Large"></asp:RequiredFieldValidator>
                 </td>
             </tr>
         </table>
-        <asp:Button ID="btnAccept" runat="server" Height="39px" Text="Accept" Width="108px" OnClick="btnAccept_Click" />
+        <asp:Button ID="btnAccept" runat="server" Height="39px" Text="Accept" Width="108px" OnClick="btnAccept_Click" ValidationGroup="Transaction" />
 &nbsp;&nbsp;
-        <asp:Button ID="btnDecline" runat="server" Height="39px" Text="Decline" Width="108px" OnClick="btnDecline_Click" />
+        <asp:Button ID="btnDecline" runat="server" Height="39px" Text="Decline" Width="108px" OnClick="btnDecline_Click" ValidationGroup="Transaction" />
         &nbsp;<br />
         <br />
-        Notifications:<asp:GridView ID="dgvNotif" runat="server" CellPadding="3" Width="800px">
+        Notifications:
+        <asp:GridView ID="dgvNotif" runat="server" CellPadding="3" Width="800px">
             <Columns>
                 <asp:BoundField DataField="Req_Name" HeaderText="Receiver Name" SortExpression="Req_Name" />
                 <asp:BoundField DataField="Prod_Take" HeaderText="Product Requested" SortExpression="Prod_Take" />
